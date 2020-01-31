@@ -6,7 +6,7 @@ import { Layout } from 'antd';
 import Languages from './Components/Languages';
 import List from './Components/List';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Sider, Content } = Layout;
 
 export default () => {
   return (
@@ -21,7 +21,6 @@ export default () => {
             <List />
           </Content>
         </Layout>
-        <Footer>Footer</Footer>
       </Layout>
     </div>
   );
