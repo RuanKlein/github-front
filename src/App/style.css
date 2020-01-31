@@ -1,1 +1,10 @@
-/* Nadica, por enquanto :-( */
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+  font-size: medium;
+}
+
+.App-Header, .App-Sider {
+    color: white;
+}
