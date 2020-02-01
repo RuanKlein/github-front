@@ -1,10 +1,10 @@
 @import '~antd/dist/antd.css';
 
 .App {
-  text-align: center;
   font-size: medium;
 }
 
-.App-Header, .App-Sider {
-    color: white;
+.App-Header {
+  text-align: center;
+  color: white;
 }

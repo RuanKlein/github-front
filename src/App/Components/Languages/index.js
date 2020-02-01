@@ -1,10 +1,6 @@
 import React from 'react';
 
-import { Menu, Icon } from 'antd';
-
-import './style.css';
-
-const { SubMenu } = Menu;
+import { Menu } from 'antd';
 
 /*
  * Lista de linguagens obtida em githut.info
@@ -44,29 +40,16 @@ const languages = [
 ];
 
 export default () => {
-    return (
-        <Menu
-            className="Languages-Menu"
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['sub1']}
-            mode='inline'
-            theme="dark"
-        >
-            <SubMenu
-                key="sub1"
-                title={
-                    <span>
-                        <Icon type="code" />
-                        <span>Linguagens</span>
-                    </span>
-                }
-            >
-                <Menu.ItemGroup key="g1">
-                    {languages.map((language, index) => 
-                        <Menu.Item key={index}>{language}</Menu.Item>
-                    )}
-                </Menu.ItemGroup>
-            </SubMenu>
-        </Menu>
-    );
+    return <Menu
+        defaultSelectedKeys={['0']}
+        defaultOpenKeys={['sub1']}
+        mode="inline"
+        theme="dark"
+    >
+        {languages.map((language, index) => (
+            <Menu.Item key={index}>
+                <span>{language}</span>
+            </Menu.Item>
+        ))}
+    </Menu>
 }

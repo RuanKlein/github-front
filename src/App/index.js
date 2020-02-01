@@ -14,7 +14,7 @@ export default () => {
       <Layout>
         <Header className="App-Header">Repositórios</Header>
         <Layout>
-          <Sider className="App-Sider">
+          <Sider>
             <Languages />
           </Sider>
           <Content>
