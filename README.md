@@ -21,7 +21,7 @@ Para acessar: `http://localhost:3000`
 Rodar:
 ```
 docker build . --no-cache -t ruanklein/testeapp
-docker run --name testeapp -p 5000:5000 -itd ruanklein/testeapp
+docker run --rm --name testeapp -p 5000:5000 -itd ruanklein/testeapp
 ```
 
 Para acessar: `http://localhost:5000`
